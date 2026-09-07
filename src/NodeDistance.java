@@ -1,4 +1,4 @@
-public class NodeDistance implements Comparable<NodeDistance>{ //this implements means the class can be compared with other NodeDistance objects
+public class NodeDistance implements Comparable<NodeDistance>{ //this implements means the class can be compared with other NodeDistance objects, makes a meaning for distance finding the shortest in the queue
 
     String nodeId;
     int distance;
