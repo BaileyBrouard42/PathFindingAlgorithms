@@ -8,6 +8,7 @@ public class NodeDistance implements Comparable<NodeDistance>{ //this implements
         this.distance = distance;
     }
 
+    @Override
     public int compareTo(NodeDistance other) { //this method doesnt take into account the id just takes away the distances
         return this.distance - other.distance;
     }

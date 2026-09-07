@@ -17,8 +17,11 @@ public static void main(String[] args) {
         System.out.println("A -> " + edge.getDestinationId() + " weight: " + edge.getWeight()); //print each connecting node and its weight
     }
 
-    System.out.println(Dijkstra.findShortestPaths(graph, "A"));
+    Dijkstra dijkstra = new Dijkstra();
+    dijkstra.findShortestPaths(graph, "A"); //Listing the shortest distances from a target node
+    System.out.println(dijkstra.getDistances());
 
+    System.out.println(dijkstra.getShortestPath("C")); //Outputs the path
 
     }
 }
