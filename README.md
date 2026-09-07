@@ -19,4 +19,4 @@ For example, in a graph representing towns connected by roads of varying length,
 - **`Dijkstra`** — the core algorithm. Uses a priority queue to always explore the closest unvisited node next, updating each node's shortest known distance as cheaper routes are discovered ("relaxing" edges). Also tracks each node's predecessor so the actual path (not just the distance) can be reconstructed afterward.
 
 
-Currently working on A* now ive implamented Dijkstra
+**`Currently working on A* now ive implamented Dijkstra`**
