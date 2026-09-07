@@ -5,10 +5,22 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
+/**
+ * Implements Dijkstra's algorithm to find the shortest path from a single node
+ * to all other reachable nodes in the graph 
+ */
+
 public class Dijkstra {
 
     Map<String,Integer> distances;
     Map<String,String> previous;
+
+    /**
+    * Calculates the shortest distance from a start node to every other reachable node in the graph
+    * and records each nodes predecessor for path reconstruction
+    * @param graph
+    * @param startId
+    */
 
     public void findShortestPaths(Graph graph, String startId) {
         distances = new HashMap<>();
@@ -38,10 +50,21 @@ public class Dijkstra {
             }
         }
     }
+
+    /**
+     * A map of node id to shortest known distance from the start node
+     * @return
+     */
     public Map<String,Integer> getDistances() {
         return distances;
     }
 
+    /**
+     * Reconstructs the shortest path to the targetId using the predecessor map
+     * build by the previous findShortestPath method
+     * @param targetId destination node
+     * @return the final shortest path
+     */
     public List<String> getShortestPath(String targetId){
         List<String> path = new ArrayList<>();
         String current = targetId;

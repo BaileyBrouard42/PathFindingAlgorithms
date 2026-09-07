@@ -14,14 +14,14 @@ public static void main(String[] args) {
     List<Edge> testA = graph.getNeighbors("A"); //testing neighbours from A
 
     for (Edge edge : testA) { //for every edge in testA
-        System.out.println("A -> " + edge.getDestinationId() + " weight: " + edge.getWeight()); //print each connecting node and its weight
+//        System.out.println("A -> " + edge.getDestinationId() + " weight: " + edge.getWeight()); //print each connecting node and its weight
     }
 
     Dijkstra dijkstra = new Dijkstra();
     dijkstra.findShortestPaths(graph, "A"); //Listing the shortest distances from a target node
-    System.out.println(dijkstra.getDistances());
+//    System.out.println(dijkstra.getDistances());
 
-    System.out.println(dijkstra.getShortestPath("C")); //Outputs the path
+    System.out.println(dijkstra.getShortestPath("D")); //Outputs the path
 
     }
 }
