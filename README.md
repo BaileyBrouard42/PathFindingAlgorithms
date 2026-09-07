@@ -17,3 +17,6 @@ For example, in a graph representing towns connected by roads of varying length,
 - **`Graph`** — stores all nodes and their connections using an adjacency list (`Map<String, List<Edge>>`).
 - **`NodeDistance`** — a small helper class implementing `Comparable`, used to order nodes in the priority queue by their current known distance.
 - **`Dijkstra`** — the core algorithm. Uses a priority queue to always explore the closest unvisited node next, updating each node's shortest known distance as cheaper routes are discovered ("relaxing" edges). Also tracks each node's predecessor so the actual path (not just the distance) can be reconstructed afterward.
+
+
+Currently working on A* now ive implamented Dijkstra
